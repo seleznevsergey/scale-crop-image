@@ -1,0 +1,60 @@
+{
+  "name": "scale-crop-image",
+  "version": "0.0.1",
+  "description": "Scale and crop image by request",
+  "main": "./src/index.js",
+  "bin": {
+    "license-server": "./src/index.js"
+  },
+  "scripts": {
+    "lint": "node_modules\\.bin\\eslint src",
+    "test": "node_modules\\.bin\\mocha test\\*.spec.*",
+    "start": "npm run lint && npm test && npm test && node ."
+  },
+  "author": "Seleznev Sergey",
+  "eslintConfig": {
+    "extends": [
+      "airbnb-base",
+      "prettier"
+    ],
+    "env": {
+      "node": true,
+      "mocha": true
+    },
+    "overrides": [
+      {
+        "files": "*.spec.js",
+        "rules": {
+          "no-unused-expressions": "off"
+        }
+      }
+    ],
+    "rules": {
+      "no-underscore-dangle": 0,
+      "no-await-in-loop": 0,
+      "no-use-before-define": [
+        "error",
+        {
+          "functions": false
+        }
+      ]
+    }
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "chai-spies": "^1.0.0",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-import": "^2.10.0",
+    "mocha": "^5.1.1"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "body-parser": "^1.17.2",
+    "celebrate": "^8.0.0",
+    "express": "^4.14.1",
+    "fs-extra": "^6.0.1",
+    "sharp": "^0.20.3"
+  }
+}
