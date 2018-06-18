@@ -9,7 +9,7 @@
   "scripts": {
     "lint": "node_modules\\.bin\\eslint src",
     "test": "node_modules\\.bin\\mocha test\\*.spec.*",
-    "start": "npm run lint && npm test && npm test && node ."
+    "start": "npm run lint && npm test && node ."
   },
   "author": "Seleznev Sergey",
   "eslintConfig": {
