@@ -1,16 +1,11 @@
 # Scale-crop-image
 Web service for cropping and scaling cropped image in one http request
 
-## How to build
+
+## How to build and run
 
 ```sh
-npm i --production
-```
-
-## How to run
-
-```sh
-
+npm i && npm run start
 ```
 
 ## How to use
